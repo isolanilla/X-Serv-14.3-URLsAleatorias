@@ -3,6 +3,7 @@
 """
 Ejercicio URL aleatorias
 Ismael Solanilla
+
 """
 
 import socket
@@ -28,7 +29,7 @@ try:
         print recvSocket.recv(2048)
         print 'Answering back...'
         recvSocket.send("HTTP/1.1 200 OK\r\n\r\n" +
-                        "<html><body><h1>HOLA ANGELA!!!</h1>" +
+                        "<html><body><h1>HOLA !!!</h1>" +
                         "<a href='"+str(random.randrange(123456789))+"'>dame otra</a>"+
                         "</body></html>" +
                         "\r\n")
